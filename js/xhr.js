@@ -15,7 +15,7 @@ function loadWeapon(indexWeaponType) {
 
     if (xhr.status != 200) {
       // обработать ошибку
-      alert('Ошибка ' + xhr.status + ': ' + xhr.statusText);
+      console.log(`Ошибка ${xhr.status}: ${xhr.statusText}`);
     } else {
       // вывести результат
 			data = xhr.responseText;
@@ -32,17 +32,17 @@ function loadWeapon(indexWeaponType) {
 					// index: list[i].uiIndex,									//индекс 
 					// class: list[i].ubWeaponClass,						
 					type: list[i].ubWeaponType,									//тип оружия(пп, автомат, снайперка и тд)
-					// calibre: list[i].ubCalibre,							//калибр боеприпасов
+					calibre: list[i].ubCalibre,							//калибр боеприпасов
 					readyTime: list[i].ubReadyTime,							//скорость вскидывания
 					handling: list[i].Handling,									//сложность обращения
-					// shotsPer4Turns: list[i].ubShotsPer4Turns,//скорострельность 
+					shotsPer4Turns: list[i].ubShotsPer4Turns,   //скорострельность 
 					// burstPenalty: list[i].ubBurstPenalty,		//??? отдача ???
 					// bulletSpeed: list[i].ubBulletSpeed,
 					impact: list[i].ubImpact,										//урон
 					// deadliness: list[i].ubDeadliness,
 					// accuracy: list[i].bAccuracy,							//точность
 					magSize: list[i].ubMagSize,				 					//емкость обоймы
-					// range: list[i].usRange,									//дистанция
+					range: list[i].usRange,									//дистанция
 					// reloadDelay: list[i].usReloadDelay,
 					// burstAniDelay: list[i].BurstAniDelay,		
 					//attackVolume: list[i].ubAttackVolume,       //громкость выстрела
@@ -113,8 +113,19 @@ menu.addEventListener("click", function(e){
     if (content != "") {
     	clear()
     }
-
+	function clear () {
+		content.innerHTML = "";
+	}
 })
-function clear () {
-	content.innerHTML = "";
-}
+
+var submenuButton = document.querySelector(".submenu-button");
+submenuButton.addEventListener("click", function() {
+	var submenu = document.querySelector(".submenu");
+	if (submenu.style.display != "flex") {
+		submenu.style.display = "flex"
+	} else {
+		submenu.style.display = "none"
+	}
+})
+
+
