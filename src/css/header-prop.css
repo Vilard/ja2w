@@ -1,0 +1,22 @@
+.header-prop {
+	position: fixed;
+	top: 3.9rem;
+}
+
+.header-prop>.element {
+	/*font-size: .8rem;*/
+	font-weight: 900;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	transition: .8s;
+}
+.header-prop>div:not(:first-child):hover {
+	color: #b09e56;
+	background-color: #000;
+}
+.hide {
+	transition: 1s;
+	/*width: 0;*/
+	display: none;
+	/*background-color: transparent;*/
+}

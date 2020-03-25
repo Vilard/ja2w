@@ -1,14 +1,31 @@
 {
-  "name": "ajax",
+  "name": "ja2w",
   "version": "1.0.0",
-  "description": "",
+  "description": "ja2 weapon",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --mode development --open"
   },
-  "author": "",
+  "author": "Suchkov Vladimir",
   "license": "ISC",
   "dependencies": {
-    "node-static": "^0.7.11"
+    "@babel/polyfill": "^7.4.4",
+    "@babel/runtime": "^7.5.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "css-loader": "^3.1.0",
+    "path": "^0.12.7",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
   }
 }

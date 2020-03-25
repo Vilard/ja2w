@@ -1,0 +1,20 @@
+.menu {
+	display: flex;
+	justify-content: center;	
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	font-weight: 900;
+	background-color: #b09e56;
+	border-top: 3px solid black;
+	border-bottom: 4px solid black;
+	/*max-width: 1200px;*/
+}
+.menu > a {
+	transition: .5s;
+	padding: 1rem 1rem;
+}
+.menu > a:hover{
+	background-color: black;
+	color:#b09e56;
+
+}

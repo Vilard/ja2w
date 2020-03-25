@@ -1,0 +1,42 @@
+#content {
+	padding-top: 8.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	align-content: center;
+}
+
+.weapon>div:nth-child(1n+2),
+.header-prop>div:nth-child(1n+2) {
+	flex-direction: row;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.weapon, .header-prop {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+.weapon {
+	transition: .8s;
+}
+.weapon:hover {
+	background-color: #44444444;
+}
+
+.element {
+	min-width: 110px;
+	padding: 0 10px;
+}
+
+.name {
+	width: 20rem;
+	font-size: 1.3rem;
+	padding: 1rem;
+	font-weight: 900;
+	justify-content: flex-start;
+	align-items: flex-start;
+}

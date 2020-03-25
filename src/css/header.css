@@ -1,0 +1,8 @@
+header {
+	/*min-width: 320px;	*/
+	/*max-*/width: 100%;
+	height: 132px;
+	position: fixed;
+	border-bottom: 1px #b09e56 solid;
+	background-color: #b09e5659;
+}

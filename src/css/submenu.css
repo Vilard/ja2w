@@ -1,0 +1,32 @@
+.submenu {
+	user-select: none;
+	display: none;
+	position: absolute;
+	flex-direction: column;
+	top: 142px;
+	left: 10px;
+	background-color: #b09e56e4;
+	/*padding: .5rem 1rem;*/
+	overflow-y: auto;
+	height: calc(100vh - 132px - 2rem);
+}
+.submenu > li {
+	width: 320px;
+	/*height: 6rem;*/
+	padding: 2rem 1.5rem;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	transition: .7s;
+}
+
+.submenu > li > input {
+	margin-right: 1rem;
+	/*align-self: flex-end;*/
+	/*justify-content: flex-end;*/
+}
+.submenu > li:hover {
+	background-color: #000;
+	color: #b09e56;
+}

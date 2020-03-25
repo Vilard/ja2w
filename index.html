@@ -1,82 +1,47 @@
 <!DOCTYPE HTML>
 <html>
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <!-- <link rel="stylesheet" href="css/style.css"> -->
+	  <!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+	   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(54264397, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/54264397" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-</head>
-
-<body>
-	<header>
+	   ym(54264397, "init", {
+	        clickmap:true,
+	        trackLinks:true,
+	        accurateTrackBounce:true,
+	        webvisor:true
+	   });
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/54264397" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+	</head>
+	<body>
+		<header>
+			<div class="menu">
+				<a>all</a>
+				<a>pistol</a>
+				<a>auto pistol</a>
+				<a>submashine gun</a>
+				<a>rifle</a>
+				<a>sniper rifle</a>
+				<a>assault rifle</a>
+				<a>mashine gun</a>
+				<a>shotgun</a>
+			</div>
+			<ul class="submenu">
+			</ul>
+			<!-- <div class=header-prop></div> -->
+		</header>
 		
-	<div class="menu">
-		<a>all</a>
-		<a>pistol</a>
-		<a>auto pistol</a>
-		<a>submashine gun</a>
-		<a>rifle</a>
-		<a>sniper rifle</a>
-		<a>assault rifle</a>
-		<a>mashine gun</a>
-		<a>shotgun</a>
-	</div>
-	<div class="submenu-button">
-		<span></span>
-	</div>
-	<ul class="submenu">
-		<li>asfdasdasda1</li>
-		<li>2sdasdasdad</li>
-		<li>3asdasdasdasda</li>
-		<li>4sdadasdasda</li>
-	</ul>
-	</header>
-  <button  id="button">Загрузить phones.json!</button>
-	<div id="content"></div>
-  <script>
-  //   function loadPhones() {
-  //     var xhr = new XMLHttpRequest();
-
-  //     xhr.open('GET', 'json/phone.json', true);
-  //     xhr.send();
-		// 	xhr.onreadystatechange = function() { // (3)
-		// 	  if (xhr.readyState != 4) return;
-		// 		button.innerHTML = "ready";
-
-	 //      if (xhr.status != 200) {
-	 //        // обработать ошибку
-	 //        alert('Ошибка ' + xhr.status + ': ' + xhr.statusText);
-	 //      } else {
-	 //        // вывести результат
-	 //        alert(xhr.responseText);
-		// 			var content = document.getElementById("content");
-		// 			var data = xhr.responseText;
-		// 			content.innerHTML = data;
-	 //      }
-	 //    }
-		// 	button.innerHTML = "loading...";
-		// 	button.disabled = true;
-		// }
+		<div id="content"></div>
 		
+		<script src="dist/main.js"> </script>
 
-
-  </script>
-	<script src="js/xhr.js"></script>
-</body>
+	</body>
 
 </html>

@@ -1,0 +1,15 @@
+
+function permutationObj (obj) {
+var arr = [];
+
+	var k;
+	for (k in obj) {
+		if(!arr.includes(k) ) {
+			arr.push(k)
+		}
+	}
+	return arr;
+}
+// export let arrey = arr;
+export default permutationObj;
+// console.log(arrey)
